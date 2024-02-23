@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #001f3f;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Calendar</h1>
+
+<div class="month">      
+  <ul>
+    <li class="prev">❮</li>
+    <li class="next">❯</li>
+    <li>
+      Февраль<br>
+      <span style="font-size:18px">2024</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li><strong>Mo</strong></li>
+  <li><strong>Tu</strong></li>
+  <li><strong>We</strong></li>
+  <li><strong>Th</strong></li>
+  <li><strong>Fr</strong></li>
+  <li><strong>Sa</strong></li>
+  <li><strong>Su</strong></li>
+</ul>
+
+<ul class="days">  
+  <li></li>
+  <li></li>
+  <li></li>
+  <li><del>1</del></li>
+  <li><del>2</del></li>
+  <li><strong><del>3</del></strong></li>
+  <li><strong><del>4</del></strong></li>
+  <li><del>5</del></li>
+  <li><del>6</del></li>
+  <li><del>7</del></li>
+  <li><del>8</del></li>
+  <li><del>9</del></li>
+  <li><strong><del>10</del></strong></li>
+  <li><strong><del>11</del></strong></li>
+  <li><del>12</del></li>
+  <li><del>13</del></li>
+  <li><del>14</del></li>
+  <li><del>15</del></li>
+  <li><del>16</del></li>
+  <li><strong><del>17</del></strong></li>
+  <li><strong><del>18</del></strong></li>
+  <li><del>19</del></li>
+  <li><del>20</del></li>
+  <li><del>21</del></li>
+  <li><del>22</del></li>
+  <li><del>23</del></li>
+  <li><strong><mark>24</mark></strong></li>
+  <li><strong>25</strong></li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+</ul>
+
+</body>
+</html>
